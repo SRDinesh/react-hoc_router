@@ -1,11 +1,31 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import Hof from './HigherOrderFunc';
+import { BasicDetails, AddressDetails } from './HigherOrderComp';
+import RouteApp from './Route';
 
-export default function App() {
+const App = () => {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <h1>Today Topic's</h1>
+      <h3>
+        <li>Higher Order Components</li>
+      </h3>
+      <h3>
+        <li>Router</li>
+      </h3>
+      <h3>
+        <li>Child Routes</li>
+      </h3>
+      <h3>
+        <li>Passing props to Routes</li>
+      </h3>
+      <Hof />
+      {/* <BasicDetails />
+      <AddressDetails /> */}
+      <RouteApp />
     </div>
   );
-}
+};
+
+export default App;
